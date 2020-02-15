@@ -17,12 +17,14 @@ plugins {
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
+    // Alternatively: https://jcenter.bintray.com/org/apache/commons/commons-csv/1.8/
     jcenter()
 }
 
 dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.apache.commons:commons-csv:1.8'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
@@ -30,5 +32,6 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'csci2020u.lab02.SimpleTest'
+    //mainClassName = 'csci2020u.lab02.SimpleTest'
+    mainClassName = 'csci2020u.lab02.CSVDemo'
 }
